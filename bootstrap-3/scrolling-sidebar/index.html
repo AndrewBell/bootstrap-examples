@@ -1,0 +1,89 @@
+<!-- Heavily inspired by https://stackoverflow.com/questions/32417114/scrollable-sidebar-with-full-height -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo - Bootstrap 3 Scrolling Sidebar</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">recursivechaos</a>
+        </div>
+    </nav>
+
+    <div class="main-wrapper">
+        <div class="sidebar-container col-xs-3">
+            <div class="sidebar">
+                <nav>
+                    <ul class="nav nav-stacked nav-pills">
+                        <li>
+                            <h1>Test1</h1></li>
+                        <li>
+                            <h1>Test2</h1></li>
+                        <li>
+                            <h1>Test3</h1></li>
+                        <li>
+                            <h1>Test4</h1></li>
+                        <li>
+                            <h1>Test5</h1></li>
+                        <li>
+                            <h1>Test6</h1></li>
+                        <li>
+                            <h1>Test7</h1></li>
+                        <li>
+                            <h1>Test8</h1></li>
+                        <li>
+                            <h1>Test9</h1></li>
+                        <li>
+                            <h1>Test10</h1></li>
+                        <li>
+                            <h1>Test11</h1></li>
+                        <li>
+                            <h1>Test12</h1></li>
+                        <li>
+                            <h1>Test13</h1></li>
+                        <li>
+                            <h1>Test14</h1></li>
+                        <li>
+                            <h1>Test15</h1></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main-view col-xs-9 pull-right">
+            <div class="jumbotron text-center">
+                <div class="container">
+                    <h2>Title</h2>
+                    <p>Example <span class="text-danger">Text</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#">A Beautiful Footer</a>
+        </div>
+    </nav>
+</body>
+
+</html>
