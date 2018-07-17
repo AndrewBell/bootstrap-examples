@@ -1,0 +1,165 @@
+<!-- Based on https://www.quackit.com/css/flexbox/examples/ -->
+<!-- With Help From https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox -->
+<!doctype html>
+<title>Missisippi Marketplace</title>
+<style>
+
+  /* Some basic styling support */
+  * {
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif
+  }
+  body {
+    margin: 0;
+    color: white
+  }
+  header, footer, aside {
+    padding: 1em;
+  }
+  nav {
+    color: black;
+    height: 40px;
+  }
+  header {
+    height: 40px;
+  }
+  #appHeader {
+    background: blueviolet;
+  }
+  #workflowHeader {
+    background: mediumpurple;
+  }
+
+  /* Main includes the sidebar and results*/
+  /* It's height is set to be the entire view, minus the height of the headers */
+  #main {
+    display: flex;
+    min-height: calc(100vh - 80px);
+  }
+
+  /*The article is the results panel, including it's footer*/
+  #main > article {
+    flex: 11;
+    background: grey;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* The sidebar, also with a calculated height*/
+  /* It still uses flex property, but is set to a fixed width*/
+  #main > aside {
+    flex: 0 0 150px; /* Don't Grow, Don't Shrink, Start at 150px*/
+    background: silver;
+    height: calc(100vh - 80px);
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  /* A child of the sidebar, height minus all headers (including the sidebar header)*/
+  #filter-list {
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+  }
+
+  /*Both the results 'header' and footer are set heighth*/
+  #results {
+    background: gainsboro;
+    color: black;
+    flex: 0 0 40px;
+  }
+  footer {
+    background: lightyellow;
+    color: black;
+    flex: 0 0 40px;
+  }
+  /* Fixed flex header and footer, allow the table to grow vertically*/
+  #table {
+    flex: 1 1 auto;
+  }
+</style>
+<body>
+  <header id="appHeader">App Header</header>
+  <header id="workflowHeader">Workflow Header</header>
+  <div id="main">
+    <aside>
+      <header>
+        Filters
+      </header>
+      <div id="filter-list">
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+        <nav>
+          A Filter
+        </nav>
+      </div>
+    </aside>
+    <article>
+      <header id="results">
+        Results
+      </header>
+      <article id="table">
+        Table Contents
+      </article>
+      <footer>Footer (Temporary)</footer>
+    </article>
+  </div>
+  <!-- <footer>Footer</footer> -->
+</body>
